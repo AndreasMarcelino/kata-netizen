@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kata Netizen - Display</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: black;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Background */
+      #bg {
+        position: absolute;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        z-index: 1;
+      }
+
+      /* NAME */
+      #name {
+        position: absolute;
+        top: 400px;
+        left: 740px; 
+
+        width: 800px;
+        text-align: center;
+
+        font-size: 100px;
+        font-weight: bold;
+        color: white;
+
+        transform: rotate(90deg);
+        z-index: 2;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* SCORE */
+      #score {
+        position: absolute;
+        top: 315px;
+        left: 360px;
+
+        width: 800px;
+        text-align: center;
+
+        font-size: 250px;
+        font-weight: bold;
+        color: #1E3A8A;
+
+        transform: rotate(90deg);
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="bg" src="/images/01.png" />
+
+    <div id="name">name</div>
+    <div id="score">0</div>
+
+    <script type="module" src="./display.js"></script>
+  </body>
+</html>
